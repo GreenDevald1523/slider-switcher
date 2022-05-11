@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение локального css для переключателя -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.3/dist/css/uikit.min.css" />
+    <!-- Подключение локального css для слайдера -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <!-- Подключение Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <main class="main">
+                <!-- Спрятанное моальное окно, которые будет появляться при нажатии на кнопку в форме -->
+                <section class="confirm hide" id="confirm">
+                    <div class="confirm__content">
+                        <div class="confirm__text">
+                            Your application has been submitted
+                        </div>
+                    </div>
+                </section>
+                <section class="section__first">
+                    <div class="container">
+                        <hr class="hr__blue-center first">
+                        <p class="section__first-text">
+                            I am engaged in the development of website designs and visual products. <br> <br> In my opinion, the site, first of all, should sell the feeling that your buyer will receive. Therefore, I focus on the logic and orderliness
+                            of the requests of visitors to the site being created.
+                        </p>
+                        <hr class="hr__blue-center second">
+                    </div>
+                </section>
+                <section class="section__second">
+                    <hr class="section__second-left">
+                    <hr class="section__second-right">
+                    <div class="container">
+                        <!-- Это навигация, содержащая переключающие элементы -->
+                        <ul class="switch" uk-switcher="active: 1; animation: uk-animation-fade">
+                            <li id="servicesID" class="switch__name" style="margin-right: 378px;">
+                                <a class="services" href="#">SERVICES</a>
+                            </li>
+                            <li id="projectsID" class="switch__name">
+                                <a class="projects" href="#">PROJECTS</a>
+                            </li>
+                        </ul>
+                        <!-- Это контейнер из элементов содержимого -->
+                        <ul class="uk-switcher" id="switcher">
+                            <div class="services__content">
+                                <div class="services__items">
+                                    <div class="services__item">
+                                        <div class="services__item-logo">
+                                            <img src="./img/icon1.svg" alt="1">
+                                        </div>
+                                        <div class="services__item-name">
+                                            Website design
+                                        </div>
+                                        <div class="services__item-text">
+                                            An individual website design is created, taking into account the wishes provided and real for layout
+                                        </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__item-logo">
+                                            <img src="./img/icon1.svg" alt="1">
+                                        </div>
+                                        <div class="services__item-name">
+                                            Website redesign
+                                        </div>
+                                        <div class="services__item-text">
+                                            Redesign of the customer's website, taking into account the original palette of the project and modern trends in design
+                                        </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__item-logo">
+                                            <img src="./img/icon1.svg" alt="1">
+                                        </div>
+                                        <div class="services__item-name">
+                                            Website development
+                                        </div>
+                                        <div class="services__item-text">
+                                            Analysis of the target niche and audience, development of the site idea, site design and its subsequent layout using the Tilda constructor or HTML
+                                        </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__item-logo">
+                                            <img src="./img/icon1.svg" alt="1">
+                                        </div>
+                                        <div class="services__item-name">
+                                            Posters
+                                        </div>
+                                        <div class="services__item-text">
+                                            Development of posters for printing, interactive posters, presentations
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__content">
+                                <!-- В классе projects__items лежат блоки, которые должны слайдиться => берем его в main.js -->
+                                <div class="projects__items">
+                                    <div class="row">
+                                        <div class="project__item">
+                                            <img src="./img/proj1.png" alt="1">
+                                        </div>
+                                        <div class="project__item">
+                                            <img src="./img/proj3.png" alt="1" style="border-radius: 30px;">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="project__item">
+                                            <img src="./img/proj2.png" alt="1">
+                                        </div>
+                                        <div class="project__item">
+                                            <img src="./img/proj4.png" alt="1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="project__item">
+                                            <img src="./img/proj1.png" alt="1">
+                                        </div>
+                                        <div class="project__item">
+                                            <img src="./img/proj3.png" alt="1" style="border-radius: 30px;">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="project__item">
+                                            <img src="./img/proj2.png" alt="1">
+                                        </div>
+                                        <div class="project__item">
+                                            <img src="./img/proj4.png" alt="1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="project__item">
+                                            <img src="./img/proj1.png" alt="1">
+                                        </div>
+                                        <div class="project__item">
+                                            <img src="./img/proj3.png" alt="1" style="border-radius: 30px;">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="project__item">
+                                            <img src="./img/proj2.png" alt="1">
+                                        </div>
+                                        <div class="project__item">
+                                            <img src="./img/proj4.png" alt="1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Стрелки для переключения слайдов -->
+                                <div class="arrows">
+                                    <span id="arrow__left">
+                                        <img src="/img/arrowL.svg" alt="2">
+                                    </span>
+                                    <span id="arrow__right">
+                                        <img src="/img/arrowR.svg" alt="2">
+                                    </span>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section__third">
+                    <div class="container">
+                        <hr class="hr__blue-center section__third-hr-top">
+                        <h1 class="form__title">
+                            Feedback form
+                        </h1>
+                        <h2 class="form__sub">
+                            Ask all your questions
+                        </h2>
+                        <form class="form" method="">
+                            <input type="text" class="name" placeholder="Name">
+                            <input type="email" class="email" placeholder="E-mail">
+                            <input type="text" class="notes" placeholder="Notes">
+                            <button id="contact" type="button">
+                                Contact me
+                            </button>
+                        </form>
+                        <hr class="hr__blue-center section__third-hr-bottom">
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- Подключение локального js для переключателя -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.3/dist/js/uikit-icons.min.js"></script>
+    <!-- Подключение локального js для слайдера -->
+    <script type="text/javascript" src="./slick/slick.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>

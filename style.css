@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.main {
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.section__first {
+    background: #E8EEFB;
+    width: 100%;
+    height: 591px;
+}
+
+.hr__blue-center {
+    border: 5px solid #69A0FB;
+    background-color: #69A0FB;
+    width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.first {
+    position: relative;
+    top: 81px;
+}
+
+.second {
+    margin-top: 92px;
+    margin-bottom: 81px;
+}
+
+.section__first-text {
+    text-align: center;
+    max-width: 1213px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 198px;
+}
+
+.section__second {
+    position: relative;
+    padding-top: 229px;
+    padding-bottom: 30px;
+}
+
+.switch {
+    display: flex;
+    margin-left: 300px;
+    margin-bottom: 185px;
+}
+
+.switch__name {
+    color: #929BAE;
+}
+
+.services,
+.projects {
+    font-size: 32px;
+}
+
+.section__second-left {
+    width: 410px;
+    position: absolute;
+    top: 248px;
+    border: 7px solid #E8EEFB;
+    background-color: #E8EEFB;
+    border-radius: 10px;
+}
+
+.section__second-right {
+    margin-top: 0;
+    width: 410px;
+    position: absolute;
+    top: 248px;
+    right: 0;
+    border: 7px solid #E8EEFB;
+    background-color: #E8EEFB;
+    border-radius: 10px;
+}
+
+.services__content {}
+
+li.uk-active {
+    border-bottom: 5px solid #69A0FB;
+    color: #305FAB;
+}
+
+.switch__name-underline {
+    background-color: #69A0FB;
+    border: 5px solid #69A0FB;
+    border-radius: 10px;
+    width: 224px;
+}
+
+.hide {
+    display: none;
+}
+
+.services__content {
+    padding-bottom: 152px;
+}
+
+.services__items {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.services__item {
+    display: flex;
+    margin-bottom: 121px;
+}
+
+.services__item-logo {
+    margin-right: 140px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.services__item-name {
+    font-size: 32px;
+    color: #000000;
+    min-width: 321px;
+    height: 44px;
+    margin-right: 188px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.services__item-text {
+    font-size: 24px;
+    line-height: 33px;
+    color: #696969;
+    width: 757px;
+}
+
+.projects__content {
+    margin-top: -106px;
+}
+
+.projects__items {}
+
+.row {}
+
+.project__item {
+    margin-bottom: 45px;
+}
+
+.arrows {
+    text-align: center;
+    margin-top: -15px;
+}
+
+.arrows span {
+    cursor: pointer;
+}
+
+#arrow__left {
+    margin-right: 207px;
+}
+
+
+/* Кастомизация точек под слайдером */
+
+.slick-dots {
+    height: 0;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+.slick-dots li button {
+    height: 21px !important;
+    width: 21px !important;
+}
+
+.slick-dots li {
+    background: #E8EEFB;
+    border-radius: 50%;
+    height: 21px !important;
+    width: 21px !important;
+    margin-right: 20px !important;
+}
+
+.slick-dots button {
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active {
+    height: 10px;
+    width: 10px;
+}
+
+.slick-dots li.slick-active button {
+    background: #69A0FB;
+}
+
+.slick-dots li button:before {
+    display: none;
+}
+
+.section__third {
+    background-color: #E8EEFB;
+    height: 1187px;
+}
+
+.form__title {
+    margin-top: 235px;
+    font-size: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+.form__sub {
+    font-size: 24px;
+    text-align: center;
+    color: #696969;
+    margin-bottom: 67px;
+}
+
+
+/* Кастомизация элементов формы */
+
+.name,
+.email,
+.notes {
+    border: 1px solid #394C77;
+    border-radius: 30px;
+    background: none;
+    width: 766px !important;
+    height: 80px;
+    margin-bottom: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 24px;
+}
+
+.notes {
+    margin-bottom: 58px;
+}
+
+#contact {
+    background: #394C77;
+    border-radius: 30px;
+    width: 436px;
+    height: 117px;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#contact:hover {
+    background-color: #192849;
+}
+
+#contact:active {
+    transform: translate(0, 10px);
+}
+
+@keyframes pop {
+    0% {
+        transform: translate(0, 100vh);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes dark {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.confirm {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.confirm::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: dark 0.8s alternate;
+    z-index: 1;
+}
+
+.confirm__content {
+    margin-left: auto;
+    transition: all 1s;
+    box-sizing: border-box;
+    margin-right: auto;
+    animation: pop 0.8s alternate;
+    padding: 120px 82px;
+    width: 1000px;
+    height: 600px;
+    background: #394C77;
+    border-radius: 30px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.confirm__text {
+    font-size: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 436px;
+    color: #FDF6F0;
+    margin-top: 100px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding-left: 22px;
+}
+
+input::placeholder {
+    color: #696969;
+    font-family: 'Manrope';
+}
+
+input::placeholder-shown {
+    padding-left: 22px;
+}
+
+.section__third-hr-top {
+    position: relative;
+    top: 158px
+}
+
+.section__third-hr-bottom {
+    margin-top: 120px;
+}
