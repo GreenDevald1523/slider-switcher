@@ -86,7 +86,7 @@ li {
 
 .switch {
     display: flex;
-    margin-left: 300px;
+    justify-content: center;
     margin-bottom: 185px;
 }
 
